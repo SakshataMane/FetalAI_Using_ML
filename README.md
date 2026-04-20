@@ -1,10 +1,5 @@
 # 🏥 Fetal Health Classification Web Application
 
-[![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)](https://www.python.org/downloads/)
-[![Flask](https://img.shields.io/badge/Flask-Latest-green.svg)](https://flask.palletsprojects.com/)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Machine Learning](https://img.shields.io/badge/ML-Random%20Forest-orange.svg)](https://scikit-learn.org/)
-
 A modern, professional web application that integrates a machine learning model for predicting fetal health based on cardiotocogram (CTG) measurements. Built with Flask, HTML5, CSS3, and scikit-learn.
 
 ## 🌟 Features
@@ -97,15 +92,6 @@ python -m venv venv
 venv\Scripts\activate.bat
 ```
 
-**On macOS/Linux:**
-```bash
-# Create virtual environment
-python3 -m venv venv
-
-# Activate virtual environment
-source venv/bin/activate
-```
-
 ### Step 3: Install Dependencies
 
 ```bash
@@ -128,11 +114,6 @@ Check if the trained model exists:
 **Windows:**
 ```powershell
 dir optimized_fetal_health_model.pkl
-```
-
-**macOS/Linux:**
-```bash
-ls -la optimized_fetal_health_model.pkl
 ```
 
 **If model doesn't exist, generate it:**
@@ -357,7 +338,6 @@ curl http://127.0.0.1:5000/health
 ```bash
 # Verify virtual environment is activated
 # Windows: Check for (.venv) prefix in prompt
-# macOS/Linux: Same
 
 # Reinstall all dependencies
 pip install -r requirements.txt
@@ -415,13 +395,6 @@ netstat -ano | findstr :5000
 taskkill /PID <PID> /F
 ```
 
-macOS/Linux:
-```bash
-# Find and kill process
-lsof -i :5000
-kill -9 <PID>
-```
-
 ### Issue 4: `PermissionError` on Windows PowerShell
 
 **Cause:** Execution policy prevents script running
@@ -477,8 +450,6 @@ cd fetal-health-classification
 # Activate virtual environment
 # Windows:
 .\venv\Scripts\Activate.ps1
-# macOS/Linux:
-source venv/bin/activate
 
 # Install dependencies
 pip install --upgrade pip
@@ -524,12 +495,6 @@ python -m venv venv
 venv\Scripts\activate.bat
 ```
 
-macOS/Linux:
-```bash
-python3 -m venv venv
-source venv/bin/activate
-```
-
 **3. Install Dependencies:**
 ```bash
 pip install --upgrade pip
@@ -570,40 +535,11 @@ http://127.0.0.1:5000
    cd fetal-health-classification
    ```
 
-3. **Create Feature Branch**
-   ```bash
-   git checkout -b feature/AmazingFeature
-   ```
-
-4. **Make Your Changes**
-   - Edit files as needed
-   - Test thoroughly
-   - Ensure code quality
-
-5. **Commit Changes**
-   ```bash
-   git add .
-   git commit -m "Add AmazingFeature: description"
-   ```
-
-6. **Push to GitHub**
-   ```bash
-   git push origin feature/AmazingFeature
-   ```
-
-7. **Open Pull Request**
+3. **Open Pull Request**
    - Go to GitHub
    - Click "New Pull Request"
    - Describe your changes
    - Submit!
-
-### Types of Contributions Welcome
-- 🐛 Bug fixes
-- ✨ New features
-- 📚 Documentation improvements
-- 🎨 UI/UX enhancements
-- 🚀 Performance optimizations
-- 🧪 Additional tests
 
 ---
 
@@ -653,131 +589,3 @@ Found a bug? Have a suggestion? [Open an Issue](https://github.com/yourusername/
 
 ---
 
-## 🎯 Project Roadmap
-
-### Current Version (1.0.0)
-- ✅ Three-page website
-- ✅ Real-time predictions
-- ✅ REST API endpoints
-- ✅ Contact page
-- ✅ Responsive design
-
-### Planned Features (v1.1)
-- 📱 Mobile app version
-- 📊 Advanced analytics dashboard
-- 🔔 Email notifications
-- 👥 User authentication
-- 📈 Batch prediction API
-
-### Future Enhancements (v2.0)
-- 🌐 Multi-language support
-- 🔐 Enhanced security features
-- 📦 Docker containerization
-- 🚀 Cloud deployment
-- 🔄 Model versioning system
-
----
-
-## 📄 License
-
-This project is provided as-is for educational purposes.
-
-**Terms:**
-- ✅ Free to use
-- ✅ Free to modify
-- ✅ Free to distribute
-- ⚠️ Not for production healthcare use without adjustments
-- ⚠️ Always consult medical professionals
-
-See LICENSE file for more details.
-
----
-
-## 🙏 Acknowledgments
-
-### Credits
-- **Dataset:** Kaggle - Fetal Health Classification Dataset
-- **Framework:** Flask & scikit-learn communities
-- **Inspiration:** Maternal Health initiatives worldwide
-
-### Special Thanks
-- Healthcare professionals for guidance
-- Contributors and testers
-- Open-source community
-
----
-
-## 👥 Authors & Contact
-
-**Project Creator:** Your Name
-- GitHub: [@yourusername](https://github.com/yourusername)
-- Email: your.email@example.com
-- LinkedIn: [Your Profile](https://linkedin.com/in/yourprofile)
-
-**Contributors:**
-- [Contributor 1](https://github.com/contributor1)
-- [Contributor 2](https://github.com/contributor2)
-
----
-
-## 📊 Statistics
-
-- **Stars:** ⭐ (If you like it, give a star!)
-- **Forks:** 🍴 (Fork to contribute)
-- **Contributors:** 👥
-- **Downloads:** 📥
-- **Last Updated:** April 2024
-- **Current Version:** 1.0.0
-
----
-
-## ⚡ Quick Reference Commands
-
-```bash
-# Clone
-git clone https://github.com/yourusername/fetal-health-classification.git
-
-# Setup
-cd fetal-health-classification
-python -m venv venv
-source venv/bin/activate  # macOS/Linux
-.\venv\Scripts\Activate.ps1  # Windows
-
-# Install
-pip install -r requirements.txt
-
-# Run
-python app.py
-
-# Open
-# http://127.0.0.1:5000
-
-# Stop
-# Ctrl + C
-
-# Clean up
-# deactivate
-```
-
----
-
-## 🎉 Final Notes
-
-Thank you for using **Fetal Health Classification Web Application**!
-
-If you found this project helpful:
-- ⭐ **Star** it on GitHub
-- 🍴 **Fork** it for contributions
-- 💬 **Share** with others
-- 📢 **Report** issues to improve it
-
-**Happy predicting! 🏥❤️**
-
----
-
-**Last Updated:** April 2024  
-**Version:** 1.0.0  
-**Status:** ✅ Active Development  
-**License:** MIT
-
-For the most up-to-date information, visit: https://github.com/yourusername/fetal-health-classification
