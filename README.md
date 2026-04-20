@@ -19,28 +19,6 @@ A modern, professional web application that integrates a machine learning model 
 
 ---
 
-## 📦 Project Structure
-
-```
-fetal-health-classification/
-├── app.py                                  # Flask application with routes
-├── requirements.txt                        # Python dependencies
-├── README.md                               # This file
-├── QUICK_START.md                          # Quick start guide
-├── fetal-health-classification-model.ipynb # Model training notebook
-├── dataset/
-│   └── fetal_health.csv                   # Training dataset (2126 records)
-├── templates/
-│   ├── home.html                          # Home page with features & info
-│   ├── index.html                         # Prediction form page
-│   ├── output.html                        # Prediction results page
-│   ├── contact.html                       # Contact & business info
-│   └── inspect.html                       # Model information page
-└── optimized_fetal_health_model.pkl       # Trained Random Forest model
-```
-
----
-
 ## 🚀 Getting Started from GitHub
 
 ### Prerequisites
